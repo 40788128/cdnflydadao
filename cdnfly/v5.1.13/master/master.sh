@@ -196,7 +196,7 @@ done
 if [[ $VER == "" ]]; then
   # 获取最新版本
   echo "获取最新版..."
-  latest_version=`curl -s 'https://github.com/40788128/cdnflydadao/raw/main/cdnfly/v5.1.13/master/upgrades.json' | grep -Po 'v\d+\.\d+.\d+' || true`
+  latest_version='v5.1.13'
   if [[ "$latest_version" == "" ]]; then
     echo "获取最新版失败，请先登录官网填入主控IP"
     exit 1
